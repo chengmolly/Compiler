@@ -2,6 +2,7 @@
 #define LEXER_HPP
 
 #include "parser.hpp"
+#include "../utils/error.hpp"
 #include <string>
 #include <vector>
 #include <memory>

@@ -10,6 +10,48 @@ struct Token
 {
     enum Type
     {
+        // Key Words
+        FUNCTION,
+        RETURN,
+        IF,
+        ELSE,
+        WHILE,
+        INT,
+        BOOL,
+        TRUE,
+        FALSE,
+        // Literals
+        IDENTIFIER,
+        INTEGER_LITERAL,
+        BOOLEAN_LITERAL,
+        STRING_LITERAL,
+        // Opeartors
+        PLUS,
+        MINUS,
+        MULTIPLY,
+        DIVIDE,
+        MODULO,
+        EQUAL,
+        NOT_EQUAL,
+        LESS,
+        LESS_EQUAL,
+        GREATER,
+        GREATER_EQUAL,
+        AND,
+        OR,
+        NOT,
+        ASSIGN,
+        // Punctuators
+        LEFT_PAREN,
+        RIGHT_PAREN,
+        LEFT_BRACE,
+        RIGHT_BRACE,
+        SEMICOLON,
+        COMMA,
+        COLON,
+        // End of File
+        END_OF_FILE,
+        INVALID
 
     };
 
