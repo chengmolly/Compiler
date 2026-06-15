@@ -94,7 +94,7 @@ namespace frontend
             return makeToken(Token::Type::END_OF_FILE);
         }
 
-        char c = advance();
+        char c = advance(); // get current char and advance to next char
 
         switch (c)
         {
@@ -122,12 +122,12 @@ namespace frontend
             return makeToken(Token::Type::MODULO);
 
         case '=':
-            if (peek() == '=')
+            if (peek() == '=') // peek next char here
             {
-                advance();
+                advance(); // consume next char
                 return makeToken(Token::Type::EQUAL);
             }
-            return makeToken(Token::Type::ASSIGN);
+            return makeToken(Token::Type::ASSIGN); // putback
 
         case '!':
             if (peek() == '=')

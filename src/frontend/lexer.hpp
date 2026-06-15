@@ -36,7 +36,6 @@ namespace frontend
         Token scanComment();
 
         bool isDigit(char c) const;
-        ;
         bool isAlpha(char c) const;
         bool isAlphaNumeric(char c) const;
 
